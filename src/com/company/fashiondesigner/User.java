@@ -1,6 +1,6 @@
 package com.company.fashiondesigner;
 
-public class User {
+public class User  {
 
     private int id = 1;
     private String surname;

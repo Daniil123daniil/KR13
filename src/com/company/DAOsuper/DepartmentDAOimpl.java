@@ -9,7 +9,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.Scanner;
 
-public class DepartmentDAOimpl implements DepartmentDAO{
+public class DepartmentDAOimpl  implements DepartmentDAO{
 
     private static final String getDepartmentById = "SELECT * FROM DEPARTMENT WHERE ID = ?;";
     private static final String getAll = "SELECT * FROM DEPARTMENT";

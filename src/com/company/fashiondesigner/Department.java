@@ -2,7 +2,7 @@ package com.company.fashiondesigner;
 
 import com.company.DAOsuper.DepartmentDAOimpl;
 
-public class Department {
+public class Department  {
     private int id = 0;
     private String name;
 

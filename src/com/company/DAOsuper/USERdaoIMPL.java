@@ -1,4 +1,5 @@
 package com.company.DAOsuper;
+
 import com.company.DBConnector;
 import com.company.fashiondesigner.User;
 
@@ -6,7 +7,10 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+import java.util.Scanner;
 
 public class USERdaoIMPL implements USERdao {
 

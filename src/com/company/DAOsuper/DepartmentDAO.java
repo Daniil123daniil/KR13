@@ -3,7 +3,6 @@ package com.company.DAOsuper;
 import com.company.fashiondesigner.Department;
 
 import java.sql.SQLException;
-import java.util.Map;
 
 public interface DepartmentDAO {
     Department getByID(int ID) throws SQLException;

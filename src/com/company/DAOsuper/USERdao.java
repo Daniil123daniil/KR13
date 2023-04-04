@@ -3,7 +3,7 @@ import com.company.fashiondesigner.User;
 
 import java.sql.SQLException;
 
-public interface USERdao {
+public interface USERdao  {
     User getByID(int ID) throws SQLException;
 
     void createUser(User user);
