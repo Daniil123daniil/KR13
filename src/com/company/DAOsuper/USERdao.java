@@ -1,4 +1,6 @@
-package com.company;
+package com.company.DAOsuper;
+import com.company.fashiondesigner.User;
+
 import java.sql.SQLException;
 
 public interface USERdao {

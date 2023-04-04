@@ -1,4 +1,7 @@
 package com.company;
+import com.company.DAOsuper.USERdaoIMPL;
+import com.company.fashiondesigner.User;
+
 import java.util.Scanner;
 
 public class Main {
@@ -50,6 +53,6 @@ public class Main {
 
     public static void printMenu(){
         System.out.println("Введите команду: ");
-        System.out.println("1 - Получить пользователя по ID, 2 - Отредактировать данные сотрудника, 3 - Внесить нового сотрудника, 4 - Удалить сотрудника, 0 - Выход ");
+        System.out.println("1 - Получить пользователя по ID, 2 - Отредактировать данные сотрудника, 3 - Внести нового сотрудника, 4 - Удалить сотрудника, 0 - Выход ");
     }
 }

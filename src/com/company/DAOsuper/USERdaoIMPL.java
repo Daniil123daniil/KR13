@@ -1,4 +1,7 @@
-package com.company;
+package com.company.DAOsuper;
+import com.company.DBConnector;
+import com.company.fashiondesigner.User;
+
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -66,8 +69,7 @@ public class USERdaoIMPL implements USERdao {
             System.out.println("1 - Фамилию, 2 - Имя, 3 - Отчество, 4 - Должность, 5 - Отдел, 6 - Зарплату, 0 - Выход");
 
             Integer[] array = {1, 2, 3, 4, 5, 6};
-            List<Integer> list = new ArrayList<>();
-            list.addAll(Arrays.asList(array));
+            List<Integer> list = new ArrayList<>(Arrays.asList(array));
             Scanner scanner = new Scanner(System.in);
             int var = scanner.nextInt();
             while (var != 0){
@@ -110,24 +112,12 @@ public class USERdaoIMPL implements USERdao {
 
             for (var variable : list) {
                 switch (variable){
-                    case 1 -> {
-                        change.setString(1,user.getSurname());
-                    }
-                    case 2 -> {
-                        change.setString(2,user.getName());
-                    }
-                    case 3 -> {
-                        change.setString(3,user.getSecondname());
-                    }
-                    case 4 -> {
-                        change.setString(4,user.getPosition());
-                    }
-                    case 5 -> {
-                        change.setString(5,user.getDepartment());
-                    }
-                    case 6 -> {
-                        change.setInt(6,user.getSalary());
-                    }
+                    case 1 -> change.setString(1,user.getSurname());
+                    case 2 -> change.setString(2,user.getName());
+                    case 3 -> change.setString(3,user.getSecondname());
+                    case 4 -> change.setString(4,user.getPosition());
+                    case 5 -> change.setString(5,user.getDepartment());
+                    case 6 -> change.setInt(6,user.getSalary());
                 }
             }
             System.out.println("User info changed");

@@ -1,4 +1,5 @@
-package com.company;
+package com.company.fashiondesigner;
+
 public class User {
 
     private int id = 1;
